@@ -4,7 +4,8 @@ const app = express();
 const dotenv = require('dotenv');
 
 const cors = require('cors');
-
+const connecttodb  =require('./db/db');
+connecttodb();
 // Load environment variables from .env file
 dotenv.config();
 
